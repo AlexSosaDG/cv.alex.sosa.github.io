@@ -5,18 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=10">
-    <title>Proyecto Integrador</title>
+    <title>Alex Sosa - Proyecto Integrador - marzo 23</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="imagenes/iconofavicon.ico">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
     <script src="js/function.js"></script>
     <header>
-        <h4>Alex Sosa /</h4>
-        <h4>Estudiante de Diseño Gráfico</h4>
+        <div id="nombre">
+            <h4>Alex Sosa</h4>
+            <p>/</p>
+            <p>Estudiante de Diseño Gráfico</p>
+        </div>
         <nav>
-            <ul>
-                <li>INICIO</li>
+            <button id="llamarmenu" title="abre/cierraelmenu">
+                <i class=" material-icons icono-menu hamburguesa ">menu</i>
+                <i class=" material-icons cruz novisible">close</i>
+                <div class="fondomenu"></div>
+            </button>
+            <ul class="menu novisible">
+                <li class="boton_prendido">INICIO</li>
                 <li>EXPERIENCIA</li>
                 <li>HABILIDADES</li>
                 <li>PORTAFOLIO</li>
@@ -25,10 +35,13 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h1>"Con un poco se puede hacer mucho"</h1>
+        <section id="principal">
+            <div class="fotoperfil"><img src="imagenes/perfil.png" alt="foto usuario"></div>
+            <div class="linea"></div>
+            <h1>“Con poco se puede hacer mucho”</h1>
             <p>Tengo la habilidad de solucionar los problemas con los recursos que tenga en el momento.</p>
-            <ul>
+            <div class="linea"></div>
+            <ul class="iconosredes">
                 <li><a href="https://www.linkedin.com/in/alex-sosa-nowen/" target="_blank" title="Perfil de Linkedin">
                         <img src="imagenes/iconolinkedin.png" alt="Logo Linkedin">
                     </a></li>
@@ -36,37 +49,31 @@
                         <img src="imagenes/iconogmail.png" alt="enviar mail">
                     </a></li>
                 <li><a aria-label="Chat on WhatsApp" href="https://wa.me/1121796628" target="_blank"> <img
-                            alt="Chat on WhatsApp" src="imagenes/boton wssp.png" /> </a></li>
+                            alt="Chat on WhatsApp" src="imagenes/iconowssp.png" /> </a></li>
             </ul>
-            <img src="imagenes/perfil.png" alt="foto usuario">
         </section>
-        <section>
+        <section class="fondoverde">
             <h2>GRABADO EN MADERA</h2>
-            <ol>
-                <li>
-                    <ol>
-                        <li>
-                            <h4>Artista</h4>
-                        </li>
-                        <li>Junio 2021 - Actualidad</li>
-                        <li>Emprendimiento de grabado en madera</li>
-                    </ol>
-                </li>
-                <li>
-                    <ol>
-                        <li>
-                            <h4>Responsabilidades</h4>
-                        </li>
-                        <li>producción</li>
-                        <li>Community manager</li>
-                        <li>administración</li>
-                        <li>venta online</li>
-                    </ol>
-                </li>
-                <li><a href="https://www.instagram.com/xilo.nowen/" target="_blank" title="instagram Xilo.nowen"> <img
-                            src="imagenes/logo xilonowen.png" alt="marca Xilo Nowen"></a>
-                </li>
-            </ol>
+            <div>
+                <h4>Artista</h4>
+                <ol class="listapuestoactual">
+                    <li>Junio 2021 - Actualidad</li>
+                    <li>Emprendimiento de grabado en madera</li>
+                </ol>
+            </div>
+            <div>
+                <h4>Responsabilidades</h4>
+                <ol class="listapuestoactual">
+                    <li>producción</li>
+                    <li>Community manager</li>
+                    <li>administración</li>
+                    <li>venta online</li>
+                </ol>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/xilo.nowen/" target="_blank" title="instagram Xilo.nowen"> <img
+                    src="imagenes/logo xilonowen.png" alt="marca Xilo Nowen"></a>
+            </div>    
         </section>
         <section>
             <h2>EXPERIENCIA</h2>
@@ -221,59 +228,59 @@
             <article class="album">
                 <figure class="galeria">
                     <img src="imagenes/afiche_1.png" alt="Afiche la bella durmiente">
-                    <p>"La bella durmiente" Diseño de afiche #punk</p>
+                    <figcaption>"La bella durmiente" Diseño de afiche #punk</figcaption>
                 </figure>
                 <figure class="galeria">
                     <img src="imagenes/afiche_2.png" alt="Afiche mujer de agua">
-                    <p>Practica de Photoshop "Acuario"</p>
+                    <figcaption>Practica de Photoshop "Acuario"</figcaption>
                 </figure>
                 <figure class="galeria">
                     <img src="imagenes/afiche_3.png" alt="Afiche robot">
-                    <p>Diseño de poster "Robotico"</p>
+                    <figcaption>Diseño de poster "Robotico"</figcaption>
                 </figure>
                 <figure class="galeria">
                     <img src="imagenes/afiche_4.png" alt="Composición - morfología">
-                    <p>Composición morfológica "Dos polos"</p>
+                    <figcaption>Composición morfológica "Dos polos"</figcaption>
                 </figure>
                 <figure class="galeria">
                     <img src="imagenes/flyer_1.png" alt="Flyer Cosmiatría">
-                    <p>Folleto de Cosmiatría</p>
+                    <figcaption>Folleto de Cosmiatría</figcaption>
                 </figure>
                 <figure class="galeria">
                     <img src="imagenes/flyer_2.jpg" alt="Flyer depilación">
-                    <p>Folleto de depilación</p>
+                    <figcaption>Folleto de depilación</figcaption>
                 </figure>
                 <figure class="galeria">
                     <img src="imagenes/flyer_3.png" alt="Flyer bellesa facial">
-                    <p>Diseño de cartel impreso en lona de bellesa facial</p>
+                    <figcaption>Diseño de cartel impreso en lona de bellesa facial</figcaption>
                 </figure>
                 <figure class="galeria">
                     <img src="imagenes/tarjeta_1.png" alt="Tarjeta personal andamios">
-                    <p>Diseño de tarjeta personal de fabrica de andamios</p>
+                    <figcaption>Diseño de tarjeta personal de fabrica de andamios</figcaption>
                 </figure>
                 <figure class="galeria">
                     <img src="imagenes/tarjeta_2.png" alt="Tarjeta personal pizzeria">
-                    <p>Diseño de tarjeta para pizzería</p>
+                    <figcaption>Diseño de tarjeta para pizzería</figcaption>
                 </figure>
                 <figure class="galeria">
                     <img src="imagenes/tarjeta_3.png" alt="Tarjeta personal estilista">
-                    <p>Diseño de tarjeta personal de estilista</p>
+                    <figcaption>Diseño de tarjeta personal de estilista</figcaption>
                 </figure>
                 <figure class="galeria">
                     <img src="imagenes/tarjeta_4.png" alt="Tarjeta personal alex Sosa">
-                    <p>Diseño de tarjeta personal propia @xilo.nowen @alexipsum</p>
+                    <figcaption>Diseño de tarjeta personal propia @xilo.nowen @alexipsum</figcaption>
                 </figure>
                 <figure class="galeria">
                     <img src="imagenes/marca_2.png" alt="Marca prototipo de juego">
-                    <p>Diseño de marca de un prototipo de juego</p>
+                    <figcaption>Diseño de marca de un prototipo de juego</figcaption>
                 </figure>
                 <figure class="galeria">
                     <img src="imagenes/marca_1.png" alt="Marca y tarjeta personal Delicias Mirian">
-                    <p>Diseño de marca y tarjeta de "Delicias Mirian"</p>
+                    <figcaption>Diseño de marca y tarjeta de "Delicias Mirian"</figcaption>
                 </figure>
                 <figure class="galeria">
                     <img src="imagenes/carte_1.png" alt="Cartel plegable">
-                    <p>Diseño de cartel publicitario plegable</p>
+                    <figcaption>Diseño de cartel publicitario plegable</figcaption>
                 </figure>
             </article>
             <div>
